@@ -9,7 +9,7 @@ class Motivation extends React.Component {
     render(){
         return(
             <div>
-                <img src={this.props.motivationImage}/>
+                <img src={this.props.motivationImage} alt='motivational image'/>
             </div>
         )
     }

@@ -14,15 +14,12 @@ class App extends React.Component {
     isSpiritualTrue: false
   };
 
-  
-
   getMotivationImages = async () => {
     const response = await axios.get('https://api.unsplash.com/photos/random', {
       params: {query: 'motivation'},
       headers: {Authorization: 'Client-ID vE0h-guSKuieyv6imvOm_Wlrtt2Y7MUlEj2X3aCgQqY'}
     });
     this.setState({MotivationImages: response.data.urls.small});
-    console.log(this.state.MotivationImages);
   }
 
   setActivityState = (activity) => {
