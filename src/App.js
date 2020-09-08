@@ -12,7 +12,7 @@ class App extends React.Component {
     isCardioTrue: false,
     isStudyTrue: false,
     isSpiritualTrue: false
-  }
+  };
 
   getMotivationImages = async () => {
     const response = await axios.get('https://api.unsplash.com/photos/random', {
