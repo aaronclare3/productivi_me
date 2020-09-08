@@ -14,6 +14,8 @@ class App extends React.Component {
     isSpiritualTrue: false
   };
 
+  
+
   getMotivationImages = async () => {
     const response = await axios.get('https://api.unsplash.com/photos/random', {
       params: {query: 'motivation'},
